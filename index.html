@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO LIST</title>
+  </head>
+
+  <main>
+    <nav>
+      <p id="ver-lista"><a href="#" > Lista tareas</a></p>
+    </nav>
+    <section class="global">
+ 
+    <section class="Agregar_div" id="Agregar-div">
+       <h1>  Agregar Tarea</h1>
+      <form name="f1" >
+    
+     
+        <label for="">Titulo Actividad</label>
+        <input type="text"  id="titulo" autocomplete="off">
+        <label for="">Descripcion Actividad</label>
+        <input type="text" id="comentarios"  autocomplete="off">
+        <label for="">Hora Programada</label>
+      <input type="time" name="" id="tiempo"  autocomplete="off">
+      <label for="">Prioridad</label>
+      <div class="tipo-prioridad">
+        <div class="tipo">
+          <input type="radio" class="tipo-prioridad-boton" name="tipo" id="Alto" checked="true" value="Alto">Alto
+      
+        </div>
+        <div class="tipo">
+          <input type="radio" class="tipo-prioridad-boton" name="tipo" id="Medio" value="Medio">Medio
+         
+        </div>
+        <div class="tipo">
+          <input type="radio" class="tipo-prioridad-boton" name="tipo" id="Bajo" value="Bajo">Bajo
+         
+        </div>
+      </div>
+     
+      <div class="div-boton" >
+        <label class="aviso" id="aviso">Porfavor llene los campos solicitados</label>
+        <input type="button" class="boton-agregar" id="boton-agregar" value="Agregar">
+      </div>
+    </div>
+  </form>
+
+ 
+    </section>
+  <Section class="seccion-lista" id="seccion-lista">
+    <div id="header-items">
+      <ul class="nav">
+  
+ <li><a href="#" id="todas">Todas</a>
+   <ul>
+    <li><a  href="#" id="alto-a-bajo">De Alta A Baja</a></li>
+   <li><a  href="#" id="bajo-a-alto">De Baja A Alta</a></li>
+   <li><a href="#" id="solo-alto">Solo Altas</a></li>
+   <li><a href="#" id="solo-medio">Solo Medias</a></li>
+   <li><a href="#" id="solo-bajo">Solo Bajas</a></li>
+   </ul>
+ 
+ </li>
+ <ul>
+ 
+ </ul>
+      </ul>
+    </div>
+    <div class="lista-items" id="lista" >
+  
+    </div>
+  </section>
+  
+  </main>
+  <script src="script.js"></script>
+</html>
